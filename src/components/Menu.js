@@ -14,7 +14,7 @@ const Menu = props => {
         </Link>
       ))}
       <a
-        href="https://github.com/bluepeter/gatsby-material-ui-business-starter"
+        href="https://mikebeaulieuqtech.github.io/Mines-Dashboard"
         target="_blank"
         rel="noopener noreferrer"
       >

@@ -1,20 +1,20 @@
 module.exports = {
-  pathPrefix: "/gatsby-material-ui-business-starter",
+  pathPrefix: "/Mines-Dashboard",
   siteMetadata: {
     title: "Mines Data Hub",
     contact: {
-      phone: "503-555-1111",
-      email: "hi@foxandgeese.com",
+      phone: "",
+      email: "",
     },
     menuLinks: [
       /* {
         name: "Products",
         link: "/products",
-      },
+      }, */
       {
         name: "Team",
         link: "/team",
-      }, */
+      }, 
       {
         name: "Dashboards",
         link: "/dashboards",
