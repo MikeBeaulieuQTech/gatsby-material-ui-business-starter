@@ -1,19 +1,23 @@
 module.exports = {
   pathPrefix: "/gatsby-material-ui-business-starter",
   siteMetadata: {
-    title: "Gatsby Material UI Business Starter",
+    title: "Mines Data Hub",
     contact: {
       phone: "503-555-1111",
       email: "hi@foxandgeese.com",
     },
     menuLinks: [
-      {
+      /* {
         name: "Products",
         link: "/products",
       },
       {
         name: "Team",
         link: "/team",
+      }, */
+      {
+        name: "Dashboards",
+        link: "/dashboards",
       },
     ],
   },
@@ -27,6 +31,19 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages`,
         name: "pages",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+        name: `data`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-csv`,
+      options: {
+        noheader: false,
       },
     },
   ],

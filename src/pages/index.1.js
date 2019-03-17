@@ -21,7 +21,13 @@ const styles = theme => ({
   Home = props => {
     const products = props.data.allMarkdownRemark.edges;
     return (
-      <Page title="Mines Data Hub">
+      <Page title="Gatsby Material UI Business Starter">
+        <SEO title="Home">
+          <meta
+            name="description"
+            content="Beautiful Gatsby Material UI Business Starter. Tiny code. Well organized. Ready to customize and go."
+          />
+        </SEO>
 
         <HomeFeatures />
         <Grid
@@ -31,7 +37,29 @@ const styles = theme => ({
           alignItems="flex-start"
           justify="center"
         >
-
+          <Grid item xs={12} md={10} style={{ minHeight: "523px" }}>
+            <Card
+              title="Our Products"
+              avatar={
+                <Avatar>
+                  <Gift />
+                </Avatar>
+              }
+              action={
+                <>
+                  <Button
+                    variant="contained"
+                    color="secondary"
+                    className={props.classes.root}
+                  >
+                    <Link to="/products">View All Products</Link>
+                  </Button>
+                </>
+              }
+            >
+              <Carousel items={products} />
+            </Card>
+          </Grid>
         </Grid>
       </Page>
     );
