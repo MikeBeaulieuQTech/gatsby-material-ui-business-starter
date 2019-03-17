@@ -67,9 +67,7 @@ class ScrollableTabsButtonAuto extends React.Component {
             <Tab label="Item Two" />
             <Tab label="Item Three" />
             <Tab label="Dashboard Grid" />
-            <Tab label="Item Five" />
-            <Tab label="Item Six" />
-            <Tab label="Item Seven" />
+            
           </Tabs>
         </AppBar>
         {value === 0 && 
@@ -82,9 +80,7 @@ class ScrollableTabsButtonAuto extends React.Component {
           <TabContainer>
             <GridDashboard classes={classes} value={this.state} ></GridDashboard>
           </TabContainer>}
-        {value === 4 && <TabContainer>Item Five</TabContainer>}
-        {value === 5 && <TabContainer>Item Six</TabContainer>}
-        {value === 6 && <TabContainer>Item Seven</TabContainer>}
+        
       </div>
     );
   }
