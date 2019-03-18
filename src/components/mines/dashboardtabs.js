@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import DashboardAnnualCoalComponent from '../../components/mines/dashboardannualcoalproduction'
 import GridDashboard from '../../components/mines/griddashboard'
+import GridDashboard1 from '../../components/mines/griddashboard1'
 
 function TabContainer(props) {
   return (
@@ -74,7 +75,7 @@ class ScrollableTabsButtonAuto extends React.Component {
           <TabContainer>
           <DashboardAnnualCoalComponent classes={classes} value={this.state} ></DashboardAnnualCoalComponent>
         </TabContainer>}
-        {value === 1 && <TabContainer>Item Two</TabContainer>}
+        {value === 1 && <TabContainer><GridDashboard1 classes={classes} value={this.state} ></GridDashboard1></TabContainer>}
         {value === 2 && <TabContainer>Item Three</TabContainer>}
         {value === 3 && 
           <TabContainer>

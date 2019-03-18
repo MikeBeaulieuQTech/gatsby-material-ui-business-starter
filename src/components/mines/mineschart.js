@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Line, Pie, Bar, Doughnut, Polar, Radar } from 'react-chartjs-2'
+import { Bar} from 'react-chartjs-2'
 
 export default class MinesChart extends Component {
   constructor(props) {

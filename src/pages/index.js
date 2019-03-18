@@ -1,15 +1,9 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import PropTypes from "prop-types";
-import SEO from "../components/SEO";
-import Card from "../components/Card";
 import Page from "../components/Page";
 import HomeFeatures from "../components/HomeFeatures";
-import Button from "@material-ui/core/Button";
-import Carousel from "../components/Carousel";
 import Grid from "@material-ui/core/Grid";
-import Avatar from "@material-ui/core/Avatar";
-import { Gift } from "mdi-material-ui";
 import { withStyles } from "@material-ui/core/styles";
 import withRoot from "../utils/withRoot";
 

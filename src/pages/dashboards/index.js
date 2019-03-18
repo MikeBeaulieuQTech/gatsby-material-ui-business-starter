@@ -1,19 +1,13 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
-import Typography from "@material-ui/core/Typography";
-import SEO from "../../components/SEO";
+import { graphql } from "gatsby";
 import Page from "../../components/Page";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
-import IconButton from "@material-ui/core/IconButton";
-import { Rocket } from "mdi-material-ui";
 import withRoot from "../../utils/withRoot";
-import { withPrefix } from "gatsby";
 
 import TheTabs from '../../components/mines/dashboardtabs'
 
 const Dashboard = props => {
+  console.log('in index')
+  console.log(props.data)
   const data = props.data.allBcannualcoalproductionCsv.edges
   return (
     <Page title="Dashboards">

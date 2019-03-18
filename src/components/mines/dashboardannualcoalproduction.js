@@ -69,7 +69,7 @@ class DashboardAnnualCoalComponent extends React.Component {
         <TableBody>
         
           {data.map(row => (
-            <TableRow key={row.node.Year}>
+            <TableRow key={row.node.Yearc}>
               <TableCell component="th" scope="row">
                 {row.node.Year}
               </TableCell>
