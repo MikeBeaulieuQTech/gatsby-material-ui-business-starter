@@ -9,7 +9,9 @@
     "start": "npm run develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@material-ui/core": "^3.9.2",
@@ -34,6 +36,8 @@
     "react-jss": "^8.6.1",
     "react-proptypes": "^1.0.0",
     "react-swipeable-views": "^0.13.1",
-    "react-swipeable-views-utils": "^0.13.1"
-  }
+    "react-swipeable-views-utils": "^0.13.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
